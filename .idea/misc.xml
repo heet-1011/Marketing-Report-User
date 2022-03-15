@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable-v24/arrow_right.xml" value="0.147" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable-v24/close.xml" value="0.151" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable-v24/cursor.xml" value="0.1965" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable-v24/graph_gradient.xml" value="0.151" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.147" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable-v24/login.xml" value="0.137" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable-v24/logout_icon.xml" value="0.147" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable-v24/search.xml" value="0.151" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable-v24/settings.xml" value="0.147" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/add.xml" value="0.2525" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/add_task.xml" value="0.1605" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/alert.xml" value="0.147" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/bottom_navigation_bar_icon_color.xml" value="0.1605" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/cursor.xml" value="0.137" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/fgt_pwd.xml" value="0.1635" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/filter_icon.xml" value="0.1605" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/home_icon.xml" value="0.1605" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/ic_launcher_background.xml" value="0.147" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/ic_menu_camera.xml" value="0.147" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/ic_no_data_rafiki.xml" value="0.1505" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/location.xml" value="0.1505" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/login.xml" value="0.1885" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/nav_header_home_bg.xml" value="0.1605" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/notification_active_icon.xml" value="0.1635" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/notification_icon.xml" value="0.147" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/overlay_layout_bg.xml" value="0.1885" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/profile.xml" value="0.1605" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/profile_icon.xml" value="0.1605" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/rec_view_layout_bg.xml" value="0.1505" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/round_bg.xml" value="0.1885" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/side_nav_bar.xml" value="0.1965" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/sort_icon.xml" value="0.151" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/store_icon.xml" value="0.1605" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/drawable/timline_icon.xml" value="0.1605" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout-hdpi/fragment_add_user_task.xml" value="0.27447916666666666" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout-hdpi/layout_year_picker.xml" value="0.22530996152201796" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout-ldpi/fragment_add_user_task.xml" value="1.646875" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout-mdpi/fragment_add_user_task.xml" value="0.27447916666666666" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout-xhdpi/fragment_add_user_task.xml" value="0.41171875" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout-xxhdpi/fragment_add_user_task.xml" value="0.17335526315789473" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout-xxxhdpi/fragment_add_user_task.xml" value="0.17335526315789473" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/activity_authentication.xml" value="0.1716612377850163" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/activity_home.xml" value="0.136" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/app_bar_home.xml" value="0.176" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/content_home.xml" value="0.176" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/dialog_loading.xml" value="0.2" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/fragment_.xml" value="0.1265625" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/fragment_add_user_task.xml" value="0.21223354958294718" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/fragment_error.xml" value="0.17335526315789473" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/fragment_fgt_pwd.xml" value="0.21223354958294718" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/fragment_gallery.xml" value="0.27447916666666666" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/fragment_home.xml" value="0.17335526315789473" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/fragment_maps.xml" value="0.17335526315789473" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/fragment_my_profile.xml" value="0.17335526315789473" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/fragment_notification.xml" value="0.10400000000000001" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/fragment_provider_error.xml" value="0.17335526315789473" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/fragment_settings.xml" value="0.17335526315789473" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/fragment_sign_in.xml" value="0.176" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/fragment_splash.xml" value="0.136" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/fragment_stores.xml" value="0.17335526315789473" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/fragment_user_timeline.xml" value="0.1716612377850163" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/layout_fgt_pwd.xml" value="0.1716612377850163" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/layout_notification.xml" value="0.17335526315789473" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/layout_notification_item.xml" value="0.17335526315789473" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/layout_routes.xml" value="0.17335526315789473" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/layout_sort.xml" value="0.1716612377850163" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/layout_stores.xml" value="0.17335526315789473" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/layout_timeline_filter.xml" value="0.176" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/nav_header_home.xml" value="0.12" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/notification_item_view.xml" value="0.2" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/layout/task_layout.xml" value="0.176" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/menu/activity_main_drawer.xml" value="0.27447916666666666" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.17335526315789473" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/menu/home.xml" value="0.17335526315789473" />
+        <entry key="..\:/MarketingReportUser/app/src/main/res/xml/network_config.xml" value="0.27447916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

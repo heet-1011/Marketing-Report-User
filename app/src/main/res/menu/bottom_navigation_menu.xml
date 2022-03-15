@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home_icon"/>
+    <item android:id="@+id/timeline"
+        android:title="Timeline"
+        android:icon="@drawable/timline_icon"/>
+    <item android:id="@+id/add"
+        android:title="Add Task"
+        android:icon="@drawable/add_task"/>
+    <item android:id="@+id/store"
+        android:title="Store"
+        android:icon="@drawable/store_icon"/>
+    <item android:id="@+id/myprofile"
+        android:title="Profile"
+        android:icon="@drawable/profile_icon"/>
+</menu>
