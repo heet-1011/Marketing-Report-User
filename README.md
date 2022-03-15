@@ -1,5 +1,5 @@
 # Marketing Report with Geolocation Application
-This project aims to provide a way to dealers to track their salesman work with geolocation.
+This project aims to provide a way to dealers to track their salesmen work with geolocation.
 ## Link to Marketing Report Admin App
 <a href="https://github.com/heet-1011/Marketing-Report-Admin">Marketing Report Admin App</a>
 ## Working
