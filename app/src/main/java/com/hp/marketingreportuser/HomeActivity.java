@@ -332,6 +332,16 @@ public class HomeActivity extends AppCompatActivity implements LocationListener 
         imageView1.setImageTintList(ColorStateList.valueOf(getResources().getColor(R.color.black)));
         menuItem1 = menu.findItem(R.id.action_notification);
         SharedPreferences sharedPreferences = getSharedPreferences("msgRecieved", Context.MODE_PRIVATE);
+        sharedPreferences.registerOnSharedPreferenceChangeListener(new SharedPreferences.OnSharedPreferenceChangeListener() {
+            @Override
+            public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String s) {
+                if(sharedPreferences.getAll().isEmpty()){
+                    menuItem1.setIcon(R.drawable.notification_icon);
+                }else{
+                    menuItem1.setIcon(R.drawable.notification_active_icon);
+                }
+            }
+        });
         Map<String, ?> notifications = new HashMap<>();
         notifications =  sharedPreferences.getAll();
         if(notifications.isEmpty()){

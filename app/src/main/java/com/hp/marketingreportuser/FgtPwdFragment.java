@@ -5,7 +5,9 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
+import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -14,9 +16,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QuerySnapshot;
+
+import java.util.List;
 
 public class FgtPwdFragment extends Fragment {
 
@@ -24,6 +35,7 @@ public class FgtPwdFragment extends Fragment {
     TextInputEditText txtInpEditTxtMobNo,txtInpEditTxtText;
     MaterialButton btnSend;
     String mobNo,text;
+    View root;
 
     public FgtPwdFragment() {
 
@@ -37,7 +49,7 @@ public class FgtPwdFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_fgt_pwd, container, false);
+        root = inflater.inflate(R.layout.fragment_fgt_pwd, container, false);
         initViews(root);
         return root;
     }
@@ -92,9 +104,19 @@ public class FgtPwdFragment extends Fragment {
 
     private void getEnteredData() {
         if (mobNoValid() && textValid()) {
-
+            FirebaseFirestore.getInstance().collection("admin").get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+                @Override
+                public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                    List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
+                    for (DocumentSnapshot documentSnapshot : list) {
+                        String fcmToken = documentSnapshot.getString("fcmToken");
+                        FCMSend.pushNotification(getActivity(),getContext(), fcmToken, "Forgot Password", "Salesman requesting password for mobile no. : ' "+mobNo+ " ' Message from salesman ' "+text+" '");
+                    }
+                }
+            });
         }
     }
+
 
 
     private boolean mobNoValid() {

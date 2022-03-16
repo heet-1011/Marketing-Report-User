@@ -38,6 +38,14 @@
         android:id="@+id/FgtPwdFragment"
         android:name="com.hp.marketingreportuser.FgtPwdFragment"
         android:label="fragment_fgt_pwd"
-        tools:layout="@layout/fragment_fgt_pwd" />
+        tools:layout="@layout/fragment_fgt_pwd" >
+        <action
+            android:id="@+id/action_FgtPwdFragment_to_SignInFragment"
+            app:destination="@id/SignInFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
 
 </navigation>
