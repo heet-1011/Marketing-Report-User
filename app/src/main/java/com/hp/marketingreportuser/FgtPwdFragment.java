@@ -1,5 +1,7 @@
 package com.hp.marketingreportuser;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -104,13 +106,14 @@ public class FgtPwdFragment extends Fragment {
 
     private void getEnteredData() {
         if (mobNoValid() && textValid()) {
+            SharedPreferences sharedPreferences = getActivity().getSharedPreferences("profile", Context.MODE_PRIVATE);
             FirebaseFirestore.getInstance().collection("admin").get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                 @Override
                 public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
                     List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
                     for (DocumentSnapshot documentSnapshot : list) {
                         String fcmToken = documentSnapshot.getString("fcmToken");
-                        FCMSend.pushNotification(getActivity(),getContext(), fcmToken, "Forgot Password", "Salesman requesting password for mobile no. : ' "+mobNo+ " ' Message from salesman ' "+text+" '");
+                        FCMSend.pushNotification(getActivity(),getContext(), fcmToken, sharedPreferences.getString("name",""), "Salesman "+sharedPreferences.getString("name","")+"( "+sharedPreferences.getString("mobNo","")+" )"+" requesting forgot password with Message: "+text);
                     }
                 }
             });
