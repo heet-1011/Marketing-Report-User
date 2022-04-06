@@ -146,6 +146,9 @@ public class AddUserTaskFragment extends Fragment {
                 }
             });
         }
+        else{
+            progressDialog.dismiss();
+        }
     }
 
     private boolean storeNameValid() {

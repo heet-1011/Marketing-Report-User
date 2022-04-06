@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.motion.widget.MotionLayout;
 import androidx.fragment.app.Fragment;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +20,8 @@ import com.google.android.gms.maps.UiSettings;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.util.List;
 
@@ -40,11 +43,16 @@ public class MapsFragment extends Fragment {
             mapUiSettings.setTiltGesturesEnabled(true);
             mapUiSettings.setZoomGesturesEnabled(true);
             mapUiSettings.setZoomControlsEnabled(true);
+            PolylineOptions lineOptions = new PolylineOptions().width(5).color(Color.RED);
+            Polyline polyline = googleMap.addPolyline(lineOptions);
+            List<LatLng> points = polyline.getPoints();
             for(int i=0;i<storeNames.size();i++){
                 LatLng latLng = new LatLng(Double.parseDouble(storeLatitude.get(i)),Double.parseDouble(storeLongitude.get(i)));
+                points.add(latLng);
                 googleMap.addMarker(new MarkerOptions().position(latLng).title(storeNames.get(i)));
                 googleMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
             }
+            polyline.setPoints(points);
             googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
                 @Override
                 public boolean onMarkerClick(@NonNull Marker marker) {
